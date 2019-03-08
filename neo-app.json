@@ -40,7 +40,7 @@
       "path": "/sap/opu/odata",
       "target": {
         "type": "destination",
-        "name": "GWD100_OD",
+        "name": "GWD200_OD",
         "entryPath": "/sap/opu/odata"
       },
       "description": "Gateway DEV 100 SAP Assertion SSO"
