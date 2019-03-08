@@ -1,0 +1,32 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="es"
+			sap:schema-version="1" Namespace="ZSD_COMISION_SRV">
+			<EntityType sap:content-version="1" Name="Comisiones">
+				<Key><PropertyRef Name="Bukrs"/><PropertyRef Name="Gjahr"/><PropertyRef Name="Monat"/><PropertyRef Name="Kunve"/><PropertyRef Name="Vbeln"/><PropertyRef Name="Posnr"/></Key><Property Name="Bukrs" sap:updatable="false" sap:label="Sociedad" sap:unicode="false" MaxLength="4" Nullable="false" Type="Edm.String"/><Property Name="Gjahr" sap:updatable="false" sap:label="Ejercicio" sap:unicode="false" MaxLength="4" Nullable="false" Type="Edm.String"/><Property Name="Monat" sap:updatable="false" sap:label="Período" sap:unicode="false" MaxLength="2" Nullable="false" Type="Edm.String"/><Property Name="Kunve" sap:updatable="false" sap:label="Código Vendedor" sap:unicode="false" MaxLength="10" Nullable="false"
+					Type="Edm.String"/><Property Name="Vbeln" sap:updatable="false" sap:label="Factura" sap:unicode="false" MaxLength="10" Nullable="false" Type="Edm.String"/><Property Name="Posnr" sap:updatable="false" sap:label="Posición" sap:unicode="false" MaxLength="6" Nullable="false" Type="Edm.String"/><Property Name="Xblnr" sap:sortable="false" sap:label="Referencia" sap:unicode="false" MaxLength="16" Type="Edm.String"/><Property Name="NameVendedor" sap:sortable="false" sap:label="Nombre Vendedor" sap:unicode="false" MaxLength="30" Type="Edm.String"/><Property Name="Kunnr" sap:sortable="false" sap:label="Cliente" sap:unicode="false" MaxLength="10" Type="Edm.String"/><Property Name="Stcd1" sap:filterable="false" sap:sortable="false" sap:label="Nº ident.fis.1" sap:unicode="false" MaxLength="16"
+					Type="Edm.String"/><Property Name="Name1" sap:filterable="false" sap:sortable="false" sap:label="Nombre Cliente" sap:unicode="false" MaxLength="30"
+					Type="Edm.String"/><Property Name="Vkbur" sap:filterable="false" sap:sortable="false" sap:label="Oficina ventas" sap:unicode="false" MaxLength="4"
+					Type="Edm.String"/><Property Name="Denominacion" sap:filterable="false" sap:sortable="false" sap:label="Denominación Of Vta" sap:unicode="false" MaxLength="25"
+					Type="Edm.String"/><Property Name="KunnrJz" sap:filterable="false" sap:sortable="false" sap:label="Jefe Zonal" sap:unicode="false" MaxLength="10"
+					Type="Edm.String"/><Property Name="KunnrJs" sap:filterable="false" sap:sortable="false" sap:label="Jefe Sucursal" sap:unicode="false" MaxLength="10"
+					Type="Edm.String"/><Property Name="EmiFac" sap:filterable="false" sap:sortable="false" sap:label="Emision de Factura" sap:unicode="false" Type="Edm.DateTime"
+					Precision="7"/><Property Name="Matnr" sap:filterable="false" sap:sortable="false" sap:label="Material" sap:unicode="false" MaxLength="18" Type="Edm.String"/><Property Name="Maktg" sap:filterable="false" sap:sortable="false" sap:label="Denominación" sap:unicode="false" MaxLength="40"
+					Type="Edm.String"/><Property Name="Venta" sap:filterable="false" sap:sortable="false" sap:label="Venta" sap:unicode="false" Type="Edm.Decimal" Precision="16"
+					sap:unit="Waers" Scale="3"/><Property Name="Margen" sap:filterable="false" sap:sortable="false" sap:label="Margen" sap:unicode="false" Type="Edm.Decimal" Precision="16"
+					sap:unit="Waers" Scale="3"/><Property Name="Cxm" sap:filterable="false" sap:sortable="false" sap:label="CXM" sap:unicode="false" Type="Edm.Decimal" Precision="16"
+					sap:unit="Waers" Scale="3"/><Property Name="Devolucion" sap:filterable="false" sap:sortable="false" sap:label="Devolucion" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="PrctComision" sap:filterable="false" sap:sortable="false" sap:label="% Comision" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="Bonificacion" sap:filterable="false" sap:sortable="false" sap:label="Bonificaciones" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="Descuento" sap:filterable="false" sap:sortable="false" sap:label="Descuento" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="Siniestro" sap:filterable="false" sap:sortable="false" sap:label="Siniestro" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="FactSemana" sap:filterable="false" sap:sortable="false" sap:label="Factor Semana Corrid" sap:unicode="false"
+					Type="Edm.Decimal" Precision="16" sap:unit="Waers" Scale="3"/><Property Name="Comision" sap:filterable="false" sap:sortable="false" sap:label="Comision" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="SemanaCorr" sap:filterable="false" sap:sortable="false" sap:label="Semana Corrida" sap:unicode="false" Type="Edm.Decimal"
+					Precision="16" sap:unit="Waers" Scale="3"/><Property Name="TotalComisiones" sap:filterable="false" sap:sortable="false" sap:label="Total Comisiones" sap:unicode="false"
+					Type="Edm.Decimal" Precision="16" sap:unit="Waers" Scale="3"/><Property Name="Waers" sap:filterable="false" sap:sortable="false" sap:label="Moneda" sap:unicode="false" MaxLength="5" Type="Edm.String"
+					sap:semantics="currency-code"/></EntityType>
+			<EntityContainer Name="ZSD_COMISION_SRV_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true"><EntitySet sap:content-version="1" Name="ComisionesSet" sap:searchable="true" EntityType="ZSD_COMISION_SRV.Comisiones"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="./sap/ZSD_COMISION_SRV/$metadata" rel="self"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="./sap/ZSD_COMISION_SRV/$metadata" rel="latest-version"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
